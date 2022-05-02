@@ -1,4 +1,5 @@
 import {React, Component} from 'react'
+import '../Styles/Contacts.css'
 export class Contact extends Component{
     constructor(){
         super()
@@ -54,14 +55,14 @@ export class Contact extends Component{
     <div className='ContactInfo'>
     <h2>Contact</h2>
     <form onSubmit={this.onSubmit}>
-    <label className="Labels">Name: 
-    <div className='InputWrapper'>
-    <input className="Fields" type="text" name="name" value={this.state.name} onChange={this.onChange}></input></div>
-    </label>
-    <label className="Labels">Contact No.: 
-    <div className='InputWrapper'>
-    <input className="Fields" type="tel" name="contactNo" value={this.state.contactNo} onChange={this.onChange}></input></div>
-    </label>
+    <div className='inputField'>
+        <label className="Labels">Name: </label>
+        <input className="Fields" type="text" name="name" value={this.state.name} onChange={this.onChange}></input>
+    </div>
+    <div className="inputField">
+        <label className="Labels">Contact No.: </label>
+        <input className="Fields" type="tel" name="contactNo" value={this.state.contactNo} onChange={this.onChange}></input>
+    </div>
     <p className='error'>{this.state.error.message}</p>
     <br></br>
     <button>Contact Us</button>

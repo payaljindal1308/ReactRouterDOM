@@ -1,0 +1,62 @@
+.ContactUS{
+    display: flex;
+    background-color: beige;
+    color: darkblue;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contactinfo{
+    align-items: center;
+  }
+  h2{
+      margin-bottom: 0px;
+      margin-left: 5rem;
+  }
+  form{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 3rem 3rem;
+    width: 70%;
+    margin-left: 5rem;
+  }
+  .inputField{
+    display: flex;
+  }
+  .Labels{
+    padding: 15px;
+    width: 40%;
+  }
+  .Fields{
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    color:darkblue;
+    font-weight: bold;
+    margin: auto 1rem;
+    margin-right: 1px;
+  }
+  button{
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 10rem;
+    align-self: center;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  iframe{
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: blue;
+  }
+  .error{
+    color: red;
+    font-size: 15px;
+  }
+   @media screen and (min-width: 750px){
+     .ContactUS{
+       flex-direction: row;
+     }
+   }

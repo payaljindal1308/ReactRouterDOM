@@ -1,4 +1,5 @@
 import profilepic from './Images/profilepic.jpeg'
+import '../Styles/About.css'
 export const About = () =>{
     return <div class="About">
     <div class='biography'>
