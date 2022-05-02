@@ -22,13 +22,12 @@ nav{
   height: 5%;
 }
 .Home{
-  padding: 25px;
   background: url('./Components/Images/cover-v3.jpeg');
   background-color: black;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:cover;
   height: 85vh;
-  width: 96vw;
+  width: 100%;
   text-align:center;
   font-size:25px;
 }
@@ -36,7 +35,6 @@ nav a ,li{
   padding: 10px;
   text-decoration: none;
   color: black;
-
 }
 h2{
   text-align: center;
@@ -48,23 +46,26 @@ h3{
 .About{
   display: flex;
   background-color: antiquewhite;
+  flex-direction: column;
+  width: 100%;
+  margin: auto 0;
 }
 .AboutImage{
-  padding: 25px;
   background: url('./Components/Images/crushedpaper.webp');
   background-color: black;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 80vh;
-  width: 50vw;
-  object-fit: cover;
+  width: 100%;
   text-align:center;
   font-size:25px;
-
+}
+.biography{
+  width: 100%;
 }
 img{
-  width: 300px;
-  height: 200px;
+  max-width: 100%;
+  height: 150px;
 }
 p{
   color: black;
@@ -76,35 +77,57 @@ p{
 .ContactUS{
   display: flex;
   background-color: beige;
-  margin: auto 0;
-  color: darkblue
+  color: darkblue;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.Contactinfo{
+  align-items: center;
 }
 form{
-  text-align: center;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-content: space-evenly;
+  padding: 3rem;
+  width: 50%;
+  margin-left: 5rem;
+}
+.InputWrapper{
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .Fields{
   border-color: cornflowerblue;
   border-radius: 5px;
   color:darkblue;
   font-weight: bold;
-  margin-left: 2rem; 
-  margin-top: 4px;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 button{
   background-color: cornflowerblue;
-  height: 20px;
+  height: 30px;
   width: 10rem;
   align-self: center;
+  font-weight: bold;
+  border-radius: 8px;
 }
 iframe{
   height: 500px;
-  width: 500px;
-  margin: auto 0;
-  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+  border-color: blue;
 }
- 
+.error{
+  color: red;
+  font-size: 15px;
+}
+ @media screen and (min-width: 750px){
+   .ContactUS{
+     flex-direction: row;
+   }
+   .About{
+     flex-direction: row;
+   }
+ }
